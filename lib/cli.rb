@@ -15,13 +15,14 @@ class CLI
   end 
   
   def types_of_crystals
+    
   end 
   
   
   def purchase_crystal
   end 
   
-  def bye
+  def exit page 
     puts "Thank you for shopping with us! We hope you enjoy your purchase."
   end 
   
