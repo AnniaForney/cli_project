@@ -1,10 +1,15 @@
 class CLI
   
   def run 
+    open 
     welcome 
     crystal_meanings 
-    
     exit_page 
+  end 
+  
+  def open 
+     puts "Click website link in browser"
+    URL = "https://www.feelcrystals.com.au/crystal-meanings/"
   end 
   
   def welcome 
