@@ -2,9 +2,9 @@ class CLI
   
   def run 
     welcome 
-    types_of_crystals 
-    purchase_crystal 
-    bye 
+    crystal_meanings 
+    
+    exit_page 
   end 
   
   def welcome 
@@ -14,15 +14,14 @@ class CLI
     puts "Once you click on an image of a crystal you will see its meaning, element(s), and zodaic sign description."
   end 
   
-  def types_of_crystals
-    
+  def crystal_meanings 
   end 
   
   
-  def purchase_crystal
+  def 
   end 
   
-  def exit page 
+  def exit_page 
     puts "Thank you for shopping with us! We hope you enjoy your purchase."
   end 
   
