@@ -1,11 +1,8 @@
 #!/usr/bin/env ruby 
 
-require 'open-uri'
-require 'nokogiri'
-
-require_relative "../lib/cli"
-require_relative "../lib/crystal"
-require_relative "../lib/scraper"
 
 
-web = CLI.new.run 
+require_relative "../lib/environment"
+
+
+CLI.new.run 
