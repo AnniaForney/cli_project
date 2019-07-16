@@ -1,5 +1,9 @@
 class Scraper 
   
+  def self.open_page 
+    Nokogiri::HTML open(("https://www.feelcrystals.com.au/crystal-meanings/"))
+  end 
+  
   def self.scrape_meanings
     crystal = Crystal.new 
     crystal.name = crys.css("h1").text.strip 
