@@ -6,9 +6,18 @@ class Scraper
   
   
   def self.scrape_meanings
-    crystal = Crystal.new 
-    crystal.name = crys.css("h1").text.strip 
-    crystal.url = crys.children[1].attr("href") 
+    page = self.open_page
+    crystals = page.css(".product-category")
+    crystals.each do |crystal|
+      name = crystal.css(".collection-wrapper h3").text
+      ##continue to use the css method on each 'crystal' as we iterate to pull the desired values from the html
+      Crystal.new(name)
+     #binding.pry
+    end
+    
+    
+  
+     
   end 
   
   def self.scrape_all_meanings 
