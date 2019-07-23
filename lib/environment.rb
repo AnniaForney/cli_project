@@ -1,7 +1,7 @@
 require 'pry'
 require 'nokogiri'
 require 'open-uri'
-#require_relative "./cli_project/version"
+require_relative "./cli_project/version"
 
 
 

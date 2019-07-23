@@ -19,6 +19,7 @@ class CLI
   end 
   
   def crystal_meanings 
+    
   end 
   
   
