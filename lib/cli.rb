@@ -18,6 +18,11 @@ class CLI
     puts "Once you click on an image of a crystal you will see its meaning, element(s), and zodaic sign description."
   end 
   
+  def crystal_names
+    Crystal.all.each do |crystal|
+      puts crystal.name
+  end 
+  
   def crystal_meanings 
    crystal_meanings = |crystal| do 
      puts crystal.name.meanings 
