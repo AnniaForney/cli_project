@@ -19,7 +19,8 @@ class CLI
   end 
   
   def crystal_meanings 
-    
+   crystal_meanings = |crystal| do 
+     puts crystal.name.meanings 
   end 
   
   
