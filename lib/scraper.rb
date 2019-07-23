@@ -19,7 +19,7 @@ class Scraper
     end
   
   def self.crystal_names
-    crystal_names.css(."product-category").css(."term-description").collection-wrapper.map 
+    crystal_names.css(".product-category").css(".term-description").collection-wrapper.map 
     binding.pry 
   end 
   

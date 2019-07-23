@@ -11,6 +11,7 @@ class CLI
   def welcome 
     Crystal.all.each do |crystal|
       puts crystal.name
+    end 
   end 
   
   def greetings 
@@ -22,16 +23,18 @@ class CLI
   
   def crystal_names
     Crystal.all.each do |crystal|
-      puts crystal.name
+    puts crystal.name
+    end 
   end 
   
   def crystal_meanings 
    crystal_meanings.all.each do |crystal| 
      puts crystal.name.meanings 
+   end 
   end 
   
   def exit_page 
     puts "Thank you for shopping with us! We hope you enjoy your purchase."
   end 
-  
+
 end 
