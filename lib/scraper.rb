@@ -1,3 +1,4 @@
+require 'pry' 
 class Scraper 
   
   def self.open_page 
