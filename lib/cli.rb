@@ -34,7 +34,8 @@ class CLI
   end 
   
   def exit_page 
+    puts "To exit move mouse off of crystal image"
     puts "Thank you for shopping with us! We hope you enjoy your purchase."
   end 
-
-end 
+  
+end
