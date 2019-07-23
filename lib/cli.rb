@@ -11,7 +11,9 @@ class CLI
   def welcome 
     Crystal.all.each do |crystal|
       puts crystal.name
-  end
+  end 
+  
+  def greetings 
     puts "Hello customer!" 
     puts "Here are a list of healing crystals and their meanings:"
     puts "Click on an image of a crystal to see its meaning"
@@ -31,4 +33,5 @@ class CLI
   def exit_page 
     puts "Thank you for shopping with us! We hope you enjoy your purchase."
   end 
+  
 end 
