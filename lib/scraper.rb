@@ -19,7 +19,7 @@ class Scraper
     end
   
   def self.crystal_names
-    crystal_names.css(".product-category").css(".term-description").css(".collection-wrapper").map {|crystal| crystal_names}
+    crystal_names = crystal_names.css(".product-category").css(".term-description").css(".collection-wrapper").map {|crystal| crystal_names}
     binding.pry 
   end 
   
