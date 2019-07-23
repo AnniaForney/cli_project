@@ -3,7 +3,7 @@ class CLI
   def run 
     Scraper.scrape_meanings 
     welcome 
-    crystal_meanings 
+    user_input
     exit_page 
   end 
 
@@ -27,15 +27,17 @@ class CLI
     end 
   end 
   
-  def crystal_meanings 
-   crystal_meanings.all.each do |crystal| 
-     puts crystal.name.meanings 
-   end 
+  def user_input 
+    name = gets.chomp 
+    Crystal.all.find {|crystal| crystal.name == name}
   end 
+  user_input
+end 
   
   def exit_page 
-    puts "To exit move mouse off of crystal image"
+   
     puts "Thank you for shopping with us! We hope you enjoy your purchase."
   end 
   
 end
+
