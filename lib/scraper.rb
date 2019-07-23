@@ -18,4 +18,9 @@ class Scraper
      binding.pry
     end
   
+  def self.crystal_names
+    crystal_names.css(."product-category").css(."term-description").collection-wrapper
+    binding.pry 
+  end 
+  
 end 
