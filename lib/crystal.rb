@@ -5,11 +5,11 @@
 
 	def initialize(name)
 	  @name = name 
-	  #@meaning = meaning 
-	  #@key_words = key_words
-	  #@chakras = chakras
-	  #@element = element
-	  #@zodaic_sign = zodaic_sign
+	  @meaning = meaning 
+	  @key_words = key_words
+	  @chakras = chakras
+	  @element = element
+	  @zodaic_sign = zodaic_sign
 	  @@all << self 
 	end 
 

@@ -12,7 +12,7 @@ class Scraper
       name = crystal.css(".collection-wrapper h3").text
       ##continue to use the css method on each 'crystal' as we iterate to pull the desired values from the html
       Crystal.new(name)
-     #binding.pry
+     binding.pry
     end
     
     
