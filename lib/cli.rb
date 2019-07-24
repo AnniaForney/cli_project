@@ -37,7 +37,7 @@ end
     puts "Hello customer!" 
     puts "Would you like to see our list of crystals? Y or N?"
     if Y  == "Would you like to see our list of crystals?"  
-       N  = Crystal.all 
+       Y  = Crystal.all 
      elsif N == "Would you like to see our list of crystals?"  
            N  = exit 
      elsif menu = exit!
