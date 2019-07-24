@@ -33,6 +33,11 @@ class CLI
   end 
   user_input
 end 
+
+  def menu 
+    puts ""
+    puts "Would you like to search for a crystal?"
+  end 
   
   def exit_page 
    
