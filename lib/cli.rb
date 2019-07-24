@@ -4,7 +4,8 @@ class CLI
     Scraper.scrape_meanings 
     welcome 
     user_input
-    exit_page 
+    menu 
+    exit_page
   end 
 
   
@@ -17,8 +18,6 @@ class CLI
   def greetings 
     puts "Hello customer!" 
     puts "Here are a list of healing crystals and their meanings:"
-    puts "Click on an image of a crystal to see its meaning"
-    puts "Once you click on an image of a crystal you will see its meaning, element(s), and zodaic sign description."
   end 
   
   def crystal_names
@@ -35,13 +34,15 @@ class CLI
 end 
 
   def menu 
-    puts ""
-    puts "Would you like to search for a crystal?"
-  end 
-  
-  def exit_page 
-   
-    puts "Thank you for shopping with us! We hope you enjoy your purchase."
+    puts "Hello customer!" 
+    puts "Would you like to see our list of crystals? Y or N?"
+    if Y  == "Would you like to see our list of crystals?"  
+       N  = Crystal.all 
+     elsif N == "Would you like to see our list of crystals?"  
+           N  = exit 
+     elsif menu = exit!
+      puts "Thank you for shopping with us! We hope you enjoy your purchase."
+      return exit! || exit 
   end 
   
 end
