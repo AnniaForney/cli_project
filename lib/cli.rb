@@ -30,7 +30,7 @@ class CLI
     name = gets.chomp 
     Crystal.all.find {|crystal| crystal.name == name}
   end 
-  user_input
+  #user_input
 end 
 
   def menu 
