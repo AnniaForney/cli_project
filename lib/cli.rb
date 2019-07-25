@@ -33,12 +33,13 @@ class CLI
   #user_input
 end 
 
-  def menu 
+ def menu 
     puts "Hello customer!" 
     puts "Would you like to see our list of crystals? Y or N?"
     if Y  == "Would you like to see our list of crystals?"  
-       Y   = Crystal.all 
+       Y  != Crystal.all 
      elsif N == "Would you like to see our list of crystals?"  
+           N  != exit 
      elsif menu = exit!
       puts "Thank you for shopping with us! We hope you enjoy your purchase."
       return exit! || exit 
@@ -48,7 +49,6 @@ end
     puts "Thank you for shopping with us! We hope you enjoy your purchase."
     return exit! || exit 
   end 
-
   
 end
 
