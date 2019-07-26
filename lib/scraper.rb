@@ -2,7 +2,7 @@ require 'pry'
 class Scraper 
   
   def self.open_page 
-    Nokogiri::HTML open(("https://www.feelcrystals.com.au/crystal-meanings/"))
+    Nokogiri::HTML open((https://crystalearthspirit.com/pages/crystal-meanings))
   end 
   
   
@@ -18,16 +18,7 @@ class Scraper
   
   def self.crystal_names
     crystal_names = crystal_names.css(".product-category").css(".term-description").css(".collection-wrapper").map {|crystal| crystal_names}
-    binding.pry 
   end 
   
-  def self.term_description
-  end 
-  
-  def self.element
-  end 
-  
-  def self.zodaic_sign 
-  end 
   
 end 
