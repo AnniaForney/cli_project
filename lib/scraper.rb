@@ -2,7 +2,7 @@ require 'pry'
 class Scraper 
   
   def self.open_page 
-    Nokogiri::HTML open((https://crystalearthspirit.com/pages/crystal-meanings))
+    Nokogiri::HTML open(("https://crystalearthspirit.com/pages/crystal-meanings"))
   end 
   
   
