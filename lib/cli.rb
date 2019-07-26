@@ -25,6 +25,7 @@ class CLI
 
  def menu 
     puts "Hello customer!" 
+    loop do 
     puts "Would you like to see our list of crystals? Y or N?"
     input = gets.chomp 
     if input == 'Y' 
@@ -37,6 +38,7 @@ class CLI
        puts "Error message: put valid input."
        menu 
         end 
+      end 
   end 
   
   def exit_page
