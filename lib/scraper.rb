@@ -21,4 +21,13 @@ class Scraper
     binding.pry 
   end 
   
+  def self.term_description
+  end 
+  
+  def self.element
+  end 
+  
+  def self.zodaic_sign 
+  end 
+  
 end 
