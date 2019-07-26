@@ -19,7 +19,8 @@ class CLI
   def get_crystal_by_name  
     name = gets.chomp 
     selected_crystal = Crystal.all.find {|crystal| crystal.name == name} 
-    binding.pry
+    puts selected_crystal.desc
+    #binding.pry
   end 
 
  def menu 

@@ -8,12 +8,13 @@ class Scraper
   
   def self.scrape_meanings
     page = self.open_page
-    crystals = page.css(".formcontainC")
+    crystals = page.css(".formcryst")
     crystals.each do |crys| 
-    name = crys.css(".left").text.strip
-    crystal = Crystal.new(name) 
-    crystal.meaning = crys.css("center").text.strip 
-    end 
+    name = crys.css("a")[0].text.strip
+    desc = crys.css("p").text.strip
+    crystal = Crystal.new(name,desc) 
+    #crystal.meaning = crys.css("center").text.strip 
+  end 
   end 
   
   def self.crystal_names
