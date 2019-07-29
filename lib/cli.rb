@@ -42,8 +42,8 @@ class CLI
   end 
   
   def exit_page
-    "exit"
     puts "Thank you for shopping with us! We hope you enjoy your purchase."
+    exit 
   end 
   
 end
