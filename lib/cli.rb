@@ -42,7 +42,7 @@ class CLI
   end 
   
   def exit_page
-    puts "To exit type "!""
+    puts "To exit type '!'"
     puts "Thank you for shopping with us! We hope you enjoy your purchase."
   end 
   
