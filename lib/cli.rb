@@ -11,7 +11,8 @@ class CLI
   end 
   
   def crystal_names
-    Crystal.all.each do |crystal|
+    Crystal.all.each.with_index(1) do |crystal, number|
+    puts "#{number}. #{crystal}"
     puts crystal.name
     end 
   end 
@@ -30,7 +31,7 @@ class CLI
     input = gets.chomp 
     if input == 'Y' 
       crystal_names
-      puts "Enter crystal name to learn more."
+      puts "Enter a number or crystal name to learn more."
       get_crystal_by_name
      elsif input =='N' 
           exit_page
