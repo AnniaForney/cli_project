@@ -11,7 +11,7 @@ class CLI
   end 
   
   def crystal_names
-    Crystal.all.each do |crystal, number|
+    Crystal.all.each do |crystal|
     puts crystal.name
     end 
   end 
