@@ -1,3 +1,4 @@
+require 'readline'
 class CLI
   
   def run 
@@ -17,7 +18,17 @@ class CLI
   end 
   
   def get_crystal_by_name  
-    name = gets.chomp 
+    
+    #name = gets.chomp
+    crystal_list = []
+    Crystal.all.each do |crystal|
+      crystal_list << crystal.name
+     end
+    comp = proc { |s| crystal_list.grep(/^#{Regexp.escape(s)}/) }
+    Readline.completion_append_character = " "
+    Readline.completion_proc = comp
+    name = Readline.readline('> ', true)
+    name.strip!
     selected_crystal = Crystal.all.find {|crystal| crystal.name == name} 
     puts selected_crystal.desc
     #binding.pry
