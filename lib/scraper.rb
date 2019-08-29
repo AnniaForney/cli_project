@@ -12,9 +12,9 @@ class Scraper
     crystals.each do |crys| 
     name = crys.css("a")[0].text.strip
     desc = crys.css("p").text.strip
-    crystal = Crystal.new(name,desc) 
-    #crystal.meaning = crys.css("center").text.strip 
-  end 
+    if (name.length !=0)
+      crystal = Crystal.new(name,desc) 
+    end 
   end 
   
   def self.crystal_names

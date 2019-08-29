@@ -25,7 +25,7 @@ class CLI
       crystal_list << crystal.name
      end
     comp = proc { |s| crystal_list.grep(/^#{Regexp.escape(s)}/) }
-    Readline.completion_append_character = " "
+    Readline.completion_append_character = ";"
     Readline.completion_proc = comp
     name = Readline.readline('> ', true)
     name.strip!
