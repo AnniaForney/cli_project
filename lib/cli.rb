@@ -42,7 +42,7 @@ class CLI
     input = gets.chomp 
     if input == 'Y' 
       crystal_names
-      puts "Enter a letter in the terminal. Hit the tab button twice after typing that letter to see the full list of crystal names with that letter.  Proceed to enter the full name of the crystal you're interested in learning about in the terminal then hit the enter button or type a crystal name then hit enter to learn more."
+      puts "Enter a letter in the terminal. Hit the tab button twice after typing that letter to see the full list of crystal names with that letter.  Proceed to enter the full name of the crystal you're interested in learning about in the terminal then hit both the space and enter button or type a crystal name then hit the space and enter button to learn more."
       get_crystal_by_name
      elsif input =='N' 
           exit_page
