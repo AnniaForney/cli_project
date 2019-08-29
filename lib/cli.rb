@@ -23,7 +23,8 @@ class CLI
     crystal_list = []
     Crystal.all.each do |crystal|
       crystal_list << crystal.name
-     end
+    end 
+    
     comp = proc { |s| crystal_list.grep(/^#{Regexp.escape(s)}/) }
     Readline.completion_append_character = ";"
     Readline.completion_proc = comp
@@ -58,4 +59,3 @@ class CLI
   end 
   
 end
-
