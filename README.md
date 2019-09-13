@@ -1,8 +1,6 @@
 # CliProject
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/cli_project`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+Welcome to my CLI project! I decide to scrape from a crystal website to share my passion for collecting and learning about crystals. In my program you'll be able to learn more about crystals but using the search ahead feature. The search ahead feature will allow you input a letter in the terminal which will give you a list of crystals that start with the letter you have entered. I hope you enjoy my program and learn something new. 
 
 ## Installation
 
